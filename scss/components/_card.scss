@@ -1,0 +1,207 @@
+// Feature One
+.featureCardOne {
+  background-color: $whiteClr;
+  padding: 24px 16px;
+  border-radius: 6px;
+  box-shadow: 0px 10px 50px 0px rgba($primaryClr, 0.125);
+  overflow: hidden;
+  transition: 0.6s all;
+
+  h6 {
+    color: $titleClr;
+    margin-bottom: 10px;
+    transition: 0.6s all;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    em {
+      font-size: 2em;
+      font-weight: 500;
+      background: $primaryClr;
+      background: linear-gradient(to right, $primaryClr 2%, $secondaryClr 82%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primaryClr', endColorstr='$secondaryClr',GradientType=1 );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    font-size: $fz14;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0;
+  }
+
+  &.bgText {
+    color: $whiteClr;
+    background-image: url("../images/about/wave.png");
+    background-size: cover;
+    background-color: $primaryClr;
+
+    h6 {
+      color: inherit;
+      margin-bottom: 0;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+  }
+
+  &:hover {
+    h5 {
+      color: $primaryClr;
+    }
+  }
+}
+
+// Service One
+.serviceCardOne {
+  padding: 24px 16px;
+  text-align: center;
+  border: 1px solid lighten($blackClr, 30%);
+  background-color: rgba($whiteClr, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.6s all;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+
+    @include md {
+      height: 180px;
+    }
+  }
+
+  h5 {
+    color: $whiteClr;
+    margin: 24px 0;
+  }
+
+  p {
+    color: $bgLightClr;
+    font-size: $fz14;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  &:hover {
+    background-color: rgba($whiteClr, 0.05);
+  }
+}
+
+// Testimonial One
+.testimonialCardOne {
+  .icon {
+    font-size: 5em;
+    line-height: 1;
+    color: $primaryClr;
+  }
+
+  h2 {
+    color: $titleClr;
+    margin: 32px 0;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.4;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .imgAvt {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .bio {
+      h6 {
+        margin-bottom: 0;
+        color: $primaryClr;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Blog Card One
+.blogCardOne {
+  background-color: $whiteClr;
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 0px 10px 50px 0px rgba($primaryClr, 0.125);
+  overflow: hidden;
+  transition: 0.6s all;
+
+  .imgSec {
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .info {
+    margin-top: 24px;
+
+    .meta {
+      font-size: $fz12;
+    }
+
+    h5 {
+      margin: 15px 0;
+      color: $titleClr;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  &:hover {
+    .info {
+      h5 {
+        color: $primaryClr;
+      }
+    }
+  }
+}
+
+// Partner one
+.partnerCardone {
+  img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: 0.6s all;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}

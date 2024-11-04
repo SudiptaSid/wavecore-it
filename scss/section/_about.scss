@@ -1,0 +1,31 @@
+// Features One
+.featureOne {
+  padding: 100px 0;
+  background-color: $bgLightClr;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    margin-bottom: 48px;
+
+    @include md {
+      margin-bottom: 32px;
+    }
+  }
+
+  .featureCardOne {
+    height: 100%;
+  }
+}
+
+// About One
+.aboutOne {
+  padding: 100px 0;
+  background-color: $whiteClr;
+
+  @include md {
+    padding: 60px 0;
+  }
+}

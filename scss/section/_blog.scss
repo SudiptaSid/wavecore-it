@@ -1,0 +1,16 @@
+// Blog One
+.blogOne {
+  padding: 100px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    margin-bottom: 48px;
+
+    @include md {
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// Footer
+.mainFooter {
+  background-color: $bgLightClr;
+  font-size: $fz14;
+
+  .footerInfo {
+    padding: 30px;
+
+    .logoSec {
+      a {
+        display: inline-block;
+
+        img {
+          height: 34px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+// Form Control
+.form-group {
+  .form-control {
+    color: $textClr;
+    background-color: $whiteClr;
+    border: 1px solid lighten($blackClr, 80%);
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: nowrap;
+    box-shadow: none;
+    outline: none;
+
+    &:focus {
+      border-color: $primaryClr;
+      box-shadow: 0 0 0 5px rgba($primaryClr, 0.25);
+      outline: none;
+    }
+
+    &:focus {
+      border-color: $primaryClr;
+    }
+
+    &::placeholder {
+      color: lighten($textClr, 10%);
+    }
+  }
+}

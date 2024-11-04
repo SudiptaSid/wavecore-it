@@ -1,0 +1,8 @@
+// Partner One
+.partnerOne {
+  padding-bottom: 100px;
+
+  @include md {
+    padding-bottom: 0;
+  }
+}
