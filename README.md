@@ -1,2 +1,2 @@
-# wavecore-it
+# Wavecore It
  
